@@ -19,7 +19,7 @@ random_image_urls = random.sample(list(image_dict_clean.values()), 10)
 
 imageCarouselComponent(imageUrls=random_image_urls, height=300)
 
-st.header('Xbox Recommendation System')
+st.header('Xbox-360 Recommendation System')
 selectvalue = st.selectbox('Select game from dropdown', games_list)
 
 def get_similar_games(games, cosine_sim_df, top_n=5):
